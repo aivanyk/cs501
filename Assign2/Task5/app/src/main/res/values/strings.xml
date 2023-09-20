@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">task5</string>
+    <string-array name="spinner_items">
+        <item>Addition</item>
+        <item>Subtraction</item>
+        <item>Multiplication</item>
+        <item>Division</item>
+    </string-array>
+</resources>
+
