@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CS501_hw3_q6</string>
+    <string name="login_name">flashCardUser</string>
+    <string name="password">12345</string>
+    <string name="top_operand"> </string>
+    <string name="bottom_operand"> </string>
+    <string name="answer"> </string>
+    <string name="operation"> </string>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">hw3question5</string>
+    <string name="celsius_text">Celsius</string>
+    <string name="fahrenheit_text">Fahrenheit</string>
+</resources>
