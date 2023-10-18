@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="92dp"
+        android:gravity="center"
+        android:text="CHOOSE A LETTER"
+        android:textColor="@color/black"
+        android:textSize="70sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/hint_container"
+        android:name="com.example.task5.HintFragment"
+        android:layout_width="467dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="676dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:name="com.example.task5.ChooseFragmentLarge"
+        android:layout_width="92dp"
+        android:layout_height="364dp"
+        android:layout_marginStart="288dp"
+        app:layout_constraintBottom_toTopOf="@+id/hint_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/character"
+        app:layout_constraintVertical_bias="0.503"
+        tools:context=".MainActivity" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/hung_container"
+        android:name="com.example.task5.HungFragment"
+        android:layout_width="440dp"
+        android:layout_height="502dp"
+        android:layout_marginStart="764dp"
+        app:layout_constraintBottom_toTopOf="@+id/answer_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newgame_container"
+        tools:context=".MainActivity" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/answer_container"
+        android:name="com.example.task5.AnswerFragment"
+        android:layout_width="481dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="744dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:context=".MainActivity" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/newgame_container"
+        android:name="com.example.task5.NewFragment"
+        android:layout_width="189dp"
+        android:layout_height="79dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

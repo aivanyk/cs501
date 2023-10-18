@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Task2</string>
+    <string name="threshold_text">Threshold</string>
+    <string name="accelerometer_text">Accelerometer \n Measure</string>
 </resources>
