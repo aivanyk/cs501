@@ -72,10 +72,10 @@ class HungViewModel : ViewModel() {
         do {
             currQuestion = Random.nextInt(0, questions.size)
         } while (pre == currQuestion)
-        guessChange.value = 0
         hungStatus.value = 0
         hintStatus = 0
         clicked.fill(false)
+        guessChange.value = 0
         refreshFlag.value = refreshFlag.value?.plus(1)
     }
 

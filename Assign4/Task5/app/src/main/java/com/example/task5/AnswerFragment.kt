@@ -50,17 +50,6 @@ class AnswerFragment: Fragment()  {
         _binding = FragmentAnswerBinding.inflate(inflater, container, false)
         val view = binding.root
 
-//        val curr: Question = hungViewModel.getCurrQuestion()
-//        for(i in 0..curr.length()-1){
-//            val textView = view.findViewById<TextView>(viewers[i])
-//            val mSpannableString = SpannableString(curr.getChar(i))
-//            mSpannableString.setSpan(UnderlineSpan(), 0, mSpannableString.length, 0)
-//            textView.text = mSpannableString
-//        }
-//        for(i in curr.length()..5){
-//            val textView = view.findViewById<TextView>(viewers[i])
-//            textView.visibility = View.INVISIBLE
-//        }
         initView()
 
         return view
@@ -87,11 +76,19 @@ class AnswerFragment: Fragment()  {
             }
 
             if(hungViewModel.gameOver()){
-                Toast.makeText(
-                    binding.root.context,
-                    "Game is over!",
-                    Toast.LENGTH_SHORT
-                ).show()
+                if(hungViewModel.getCurrQuestion().full)
+                    Toast.makeText(
+                        binding.root.context,
+                        "You Win!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                else{
+                    Toast.makeText(
+                        binding.root.context,
+                        "You are hung!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
             }
         })
 
