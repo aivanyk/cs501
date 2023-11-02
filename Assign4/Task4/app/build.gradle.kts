@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.cs501hw4q4"
+    namespace = "com.example.cs501hw4q3"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.cs501hw4q4"
+        applicationId = "com.example.cs501hw4q3"
         minSdk = 26
         targetSdk = 33
         versionCode = 1
@@ -16,9 +16,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-    buildFeatures {
-        viewBinding  = true
-    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -34,6 +32,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+    buildFeatures{
+        viewBinding = true
     }
 }
 
